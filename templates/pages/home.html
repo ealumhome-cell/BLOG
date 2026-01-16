@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% end block %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% end block %}
+
+{% block js %}
+     <script src="{% static 'js/home.js' %}"></script>
+{% end block %}
+
+{% block content %}
+    <div class="container">
+        <h1>Home Page</h1>
+        <p>This is my Home Page using DTL!</p>
+    </div>
+
+{% end block %}

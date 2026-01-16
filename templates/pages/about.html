@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% end block %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% end block %}
+
+{% block js %}
+     <script src="{% static 'js/about.js' %}"></script>
+{% end block %}
+
+{% block content %}
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis culpa aut doloribus cumque veritatis repudiandae, neque nobis. Repudiandae quos, optio et ullam blanditiis quis perferendis alias consectetur a voluptate.</p>
+    </div>
+{% end block %}
