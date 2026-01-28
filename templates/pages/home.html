@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
     Home Page
-{% end block %}
+{% endblock %}
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
-{% end block %}
+{% endblock %}
 
 {% block js %}
      <script src="{% static 'js/home.js' %}"></script>
-{% end block %}
+{% endblock %}
 
 {% block content %}
     <div class="container">
@@ -18,4 +19,4 @@
         <p>This is my Home Page using DTL!</p>
     </div>
 
-{% end block %}
+{% endblock %}

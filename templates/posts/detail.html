@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Post List
+{% endbock %}
+
+{% block content %}
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{post.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">post subtitle</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{post.created_on}}</li>
+                    <li class="list-group-item">{{post.author}}</li>
+                </ul>
+                <p class="card-text">{{post.body}}.</p>
+             </div>
+         <div style="display: flex; justify-content:">
+        <a href="{% url 'post_edit' post.id %}" class="btn btn-secondary">Edit</a>
+        <a href="{% url 'post_delete' post.id %}" class="btn btn-danger">Delete</a>
+        
+        </div>
+    </div>
+   
+</div>
+</div>
+{% endbock %}

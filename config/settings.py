@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    #'posts',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +125,10 @@ STATICFILES_DIRS = [str(BASE_DIR.joinpath("static"))]
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+### crispy_forms varibles ###
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstap5"
+
+LOGIN_REDIRECT_URL = 'home'

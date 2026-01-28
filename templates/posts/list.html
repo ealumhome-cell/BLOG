@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Post List
+{% endbock %}
+
+{% block content %}
+    <div class="container">
+        {% for item in post %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                     <h5 class="card-title">{{item.title}}</h5>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{item.created_on}}</li>
+                        <li class="list-group-item">{{item.author}}</li>
+                        <li class="list-group-item">{{item.status}}</li>
+                    </ul>
+                 <a href="{% url 'post_detail' item.id %}" class="btn btn-secondary">Edit</a>
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+{% endbock %}
